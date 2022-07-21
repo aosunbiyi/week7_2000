@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .container{
+            width: 80%;
+            min-height: 450px;
+            margin: 0 auto;
+            overflow: auto;
+            outline: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            outline: 1px solid red;
+            font-size: 80%;
+            overflow:scroll;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati soluta recusandae voluptatibus magnam maxime eveniet ad! Consequatur saepe molestiae molestias architecto, similique impedit explicabo alias dignissimos sunt sapiente distinctio ex.
+        </div>
+    </div>
+</body>
+</html>

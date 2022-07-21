@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 80%;
+            min-height: 450px;
+            outline: 2px solid black;
+        }
+
+        .box{
+            width:300px;
+            height: 300px;
+            outline: 1px solid black;
+        }
+        @media screen and (min-width:200px) and (max-width:450px){
+            div{
+                content: 'Mobile';
+                background-color: red;
+            }
+            
+        }
+
+        @media screen and (min-width: 460px) and (max-width:700px) {
+            div{
+                content: 'Web';
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width: 710px){
+            div{
+                content: 'large screen';
+                background-color: rgb(4, 4, 136);
+            }
+             
+        }
+
+       @media print {
+        div{
+                content: 'large screen';
+                background-color: rgb(9, 9, 9);
+            }
+           
+       }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <style>
+      /* Resetting all the components */
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 80%;
+        min-height: 450px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(242, 204, 153);
+        margin: 10px;
+
+        border-width: 5px;
+        border-style: dotted;
+        border-color: green;
+
+        border: 5px dotted green;
+      }
+
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(242, 204, 153);
+        margin: 10px;
+        border: 5px solid rgb(207, 6, 6);
+        outline: 5px solid rgb(16, 14, 1);
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      .box3{
+          width:200px;
+          height: 200px;
+          background-color: rgb(192, 151, 98);
+          border: 5px double green;
+          border-radius: 100px;
+      }
+      .boxWithShadow{
+          width: 200px;
+          height: 200px;
+          background-color: white;
+          border: 5px solid black;
+          margin-left: 15px;
+          box-shadow: 4px 5px 4px 5px #ccc;
+      }
+
+      table{
+          width:30%;
+          border-collapse:collapse;
+
+      }
+
+      .box5{
+          width: 200px;
+          height: 200px;
+          background-color: #ccc;
+          border: 5px solid rgb(133, 220, 4);
+          border-image: linear-gradient(to right, red 20%, green 20%, green 40%, blue 40%, blue 60%);
+           border-image-slice: 1;
+      }
+
+      input{
+        border: 1px solid rgb(152, 115, 2);
+          border-image: linear-gradient(to right, red 20%, green 20%, green 40%, blue 40%, blue 60%);
+           border-image-slice: 1;
+           padding: 5px;
+           background-color: rgb(244, 192, 124);
+           width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">Box1</div>
+      <div class="box2">Box2</div>
+      <div class="box3">Box3</div>
+      <div class="boxWithShadow">
+      </div>
+
+      <table border="2">
+          <tr>
+              <td>Names</td>
+              <td>Results</td>
+          </tr>
+          <tr>
+              <td>James Bond</td>
+              <td>55%</td>
+          </tr>
+          <tr>
+              <td>King fred</td>
+              <td>78%</td>
+          </tr>
+      </table>
+
+      <div class="box5"></div>
+    </div>
+
+    <input type="text" >
+  </body>
+</html>
